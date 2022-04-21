@@ -8,5 +8,8 @@ Autocommit created using:
 - Lazaro Film guide on creating the github for the first time - https://lazarofilm.gitbook.io/3d-printing/creating-a-github-backup-for-klipper
 
 # Change log
+### 20220421
+- changed to spherical bearings on the z-axis and had to update all the endstop positions
+
 ### 20220409
 - changed Z retract distance in klicky-z-calibration.cfg to make sure the klicky probes clears the z endstop
