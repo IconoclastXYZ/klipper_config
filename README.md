@@ -8,6 +8,9 @@ Autocommit created using:
 - Lazaro Film guide on creating the github for the first time - https://lazarofilm.gitbook.io/3d-printing/creating-a-github-backup-for-klipper
 
 # Change log
+### 20220423
+- changed the `sample_retract_dist:` setting in the `[probe]` section to match Andrew Ellis at 0.35. All sorts of issues, probably related to switch bounce and misreading, but caused errors in automatic z-calibration and got lovely holes in the build plate... now set to `sample_retract_dist: 0.75`
+
 ### 20220421
 - changed to spherical bearings on the z-axis and had to update all the endstop positions
 
