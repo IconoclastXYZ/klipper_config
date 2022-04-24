@@ -9,7 +9,8 @@ Autocommit created using:
 
 # Change log
 ### 20220423
-- changed the `sample_retract_dist:` setting in the `[probe]` section to match Andrew Ellis at 0.35. All sorts of issues, probably related to switch bounce and misreading, but caused errors in automatic z-calibration and got lovely holes in the build plate... now set to `sample_retract_dist: 0.75`
+- changed the `sample_retract_dist:` setting in the `[probe]` section to match Andrew Ellis at 0.35 as well as the `homing_retract_dist:` in the `[stepper_z]` section.
+- this makes all the moves that touch the endstop and the klicky probe much faster, but all sorts of issues ensued, probably related to switch bounce and misreading, but caused errors in automatic z-calibration and got lovely holes in the build plate... now set to `sample_retract_dist: 0.75` and `homing_retract_dist: 0.75`. Still faster than the default, but no more issues [ed. took a long time to work that one out]
 
 ### 20220421
 - changed to spherical bearings on the z-axis and had to update all the endstop positions
