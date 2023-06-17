@@ -8,6 +8,10 @@ Autocommit created using:
 - Lazaro Film guide on creating the github for the first time - https://lazarofilm.gitbook.io/3d-printing/creating-a-github-backup-for-klipper
 
 # Change log
+### 20230617
+- Updated the entire codebase from Mainsail OS from dusty to bullseye
+- Crowsnest is now used for the Webcams - so two less config files
+
 ### 20230125
 - changed from LGX Lite to Orbiter 2.0 extruder - much better feed, esp with PA6-CF, my most challenging filament to get right
 
