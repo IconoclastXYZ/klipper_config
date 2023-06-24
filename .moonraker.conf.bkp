@@ -5,7 +5,7 @@ max_upload_size = 1024
 klippy_uds_address = ~/printer_data/comms/klippy.sock
 
 [file_manager]
-enable_object_processing = False
+enable_object_processing = True
 
 [authorization]
 cors_domains = 
@@ -36,7 +36,7 @@ enable_auto_refresh = True
 
 [update_manager mainsail]
 type = web
-channel = stable
+channel = beta
 repo = mainsail-crew/mainsail
 path = ~/mainsail
 
@@ -46,6 +46,17 @@ primary_branch = master
 path = ~/mainsail-config
 origin = https://github.com/mainsail-crew/mainsail-config.git
 managed_services = klipper
+
+[update_manager timelapse]
+type = git_repo
+primary_branch = main
+path = ~/moonraker-timelapse
+origin = https://github.com/mainsail-crew/moonraker-timelapse.git
+managed_services = klipper moonraker
+
+[timelapse]
+output_path = ~/timelapse/
+ffmpeg_binary_path = /usr/bin/ffmpeg
 
 [update_manager crowsnest]
 type = git_repo
@@ -61,4 +72,21 @@ origin = https://github.com/mainsail-crew/sonar.git
 primary_branch = main
 managed_services = sonar
 install_script = tools/install.sh
+
+[update_manager KlipperScreen]
+type = git_repo
+path = ~/KlipperScreen
+origin = https://github.com/jordanruthe/KlipperScreen.git
+env = ~/.KlipperScreen-env/bin/python
+requirements = scripts/KlipperScreen-requirements.txt
+install_script = scripts/KlipperScreen-install.sh
+managed_services = KlipperScreen
+
+[update_manager client moonraker-telegram]
+type = git_repo
+path = /home/pi/moonraker-telegram
+origin = https://github.com/Raabi91/moonraker-telegram.git
+env = /home/pi/.moonraker-telegram-env/bin/python
+requirements = scripts/moonraker-telegram-requirements.txt
+install_script = scripts/install.sh
 
