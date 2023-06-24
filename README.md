@@ -8,6 +8,10 @@ Autocommit created using:
 - Lazaro Film guide on creating the github for the first time - https://lazarofilm.gitbook.io/3d-printing/creating-a-github-backup-for-klipper
 
 # Change log
+### 20230624
+- Split out the overfull config directory into /hardware and /software
+- Installed klipperscreen and replaced the mini12864 display - gradually removing old code
+
 ### 20230617
 - Updated the entire codebase from Mainsail OS from dusty to bullseye
 - Crowsnest is now used for the Webcams - so two less config files
