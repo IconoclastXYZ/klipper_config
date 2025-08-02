@@ -56,13 +56,13 @@ gif="0"
 # Select wich cam will genarate your gif. the first cam in the variable will be 1 second cam will be 2 .....
 gif_cam="1"
 # your webcam snapshot link
-webcam="http://127.0.0.1:8080/?action=snapshot"
+webcam=("http://127.0.0.1:8080/?action=snapshot" "http://127.0.0.1:8081/?action=snapshot")
 #rotate the pic bevor sending, use degrease 0-360
-rotate="180"
+rotate=("0" "180")
 #flip the pic horizontally bevor sending, 1 = yes, 0 = No
-horizontally="0"
+horizontally=("0" "0")
 #flip the pic vertically bevor sending, 1 = yes, 0 = No
-vertically="0"
+vertically=("0" "0")
 # Make all commands Disable with 1
 bot_disable="0"
 # delay for the Print start Message
